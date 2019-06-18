@@ -48,6 +48,7 @@
             this.btnTray.TabIndex = 0;
             this.btnTray.Text = "트레이로 이동";
             this.btnTray.UseVisualStyleBackColor = true;
+            this.btnTray.Click += new System.EventHandler(this.btnTray_Click);
             // 
             // label1
             // 
@@ -71,19 +72,21 @@
             this.ntiTray.ContextMenuStrip = this.cmsMenu;
             this.ntiTray.Icon = ((System.Drawing.Icon)(resources.GetObject("ntiTray.Icon")));
             this.ntiTray.Text = "트레이 아이콘";
+            this.ntiTray.DoubleClick += new System.EventHandler(this.ntiTray_DoubleClick);
             // 
             // 홈보이기ToolStripMenuItem
             // 
             this.홈보이기ToolStripMenuItem.Name = "홈보이기ToolStripMenuItem";
             this.홈보이기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.홈보이기ToolStripMenuItem.Text = "홈 보이기";
+            this.홈보이기ToolStripMenuItem.Click += new System.EventHandler(this.홈보이기ToolStripMenuItem_Click);
             // 
             // 종ToolStripMenuItem
             // 
             this.종ToolStripMenuItem.Name = "종ToolStripMenuItem";
             this.종ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.종ToolStripMenuItem.Text = "종료";
-            this.종ToolStripMenuItem.Click += new System.EventHandler(this.종ToolStripMenuItem_Click);
+            this.종ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -98,6 +101,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "트레이 아이콘 by 3203 김나연";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.cmsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
